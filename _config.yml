@@ -1,0 +1,54 @@
+# ¡Bienvenido a Jekyll!
+#
+# Este archivo de configuración está destinado a ajustes que afectan a todo tu blog, valores
+# que se espera que configures una vez y rara vez edites después de eso. Si te encuentras
+# editando este archivo muy a menudo, considera usar la función de archivos de datos de Jekyll
+# para los datos que necesitas actualizar con frecuencia.
+#
+# Por razones técnicas, este archivo *NO* se recarga automáticamente cuando usas
+# 'bundle exec jekyll serve'. Si cambias este archivo, por favor reinicia el proceso del servidor.
+#
+# Si necesitas ayuda con la sintaxis de YAML, aquí tienes algunas referencias rápidas para ti:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Configuraciones del sitio
+# Estas se utilizan para personalizar tu nuevo sitio. Si miras en los archivos HTML,
+# los verás accesibles a través de {{ site.title }}, {{ site.email }}, y así sucesivamente.
+# Puedes crear cualquier variable personalizada que desees, y estarán accesibles
+# en las plantillas a través de {{ site.myvariable }}.
+
+title: Tema Jekyll Base
+email: username@example.com
+description: >- # ignora nuevas líneas hasta "baseurl:"
+  Sitio base para los alumnos
+  de las materias del CURZA.
+baseurl: "" # ruta base para el sitio, p. ej. /blog
+url: "" # protocolo y URL base para el sitio, p. ej. http://example.com
+twitter_username: username
+github_username:  username
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Excluir del procesamiento.
+# Los siguientes elementos no serán procesados, por defecto.
+# Cualquier elemento listado bajo la clave `exclude:` aquí será automáticamente añadido a
+# la "lista por defecto" interna.
+#
+# Los elementos excluidos pueden ser procesados listándolos explícitamente en los directorios o
+# la ruta de archivo de sus entradas en la lista `include:`.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
